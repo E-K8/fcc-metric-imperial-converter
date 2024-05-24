@@ -115,4 +115,72 @@ suite('Unit Tests', function () {
       done();
     });
   });
+
+  suite('Function convertHandler.convert(num, unit)', function () {
+    test('Gal to L', function (done) {
+      let input = [5, 'gal'];
+      let expected = 18.9271;
+      assert.approximately(
+        convertHandler.convert(input[0], input[1]),
+        expected,
+        0.1
+      );
+      done();
+    });
+
+    test('L to Gal', function (done) {
+      let input = [5, 'l'];
+      let expected = 1.32086;
+      assert.approximately(
+        convertHandler.convert(input[0], input[1]),
+        expected,
+        1.3
+      );
+      done();
+    });
+
+    test('Mi to Km', function (done) {
+      let input = [5, 'mi'];
+      let expected = 8.0467;
+      assert.approximately(
+        convertHandler.convert(input[0], input[1]),
+        expected,
+        0.1
+      );
+      done();
+    });
+
+    test('Km to Mi', function (done) {
+      let input = [5, 'km'];
+      let expected = 3.10686;
+      assert.approximately(
+        convertHandler.convert(input[0], input[1]),
+        expected,
+        0.1
+      );
+      done();
+    });
+
+    test('Lbs to Kg', function (done) {
+      let input = [5, 'lbs'];
+      let expected = 2.26796;
+      assert.approximately(
+        convertHandler.convert(input[0], input[1]),
+        expected,
+        0.1
+      );
+      done();
+    });
+
+    test('Kg to Lbs', function (done) {
+      let input = [5, 'kg'];
+      let expected = 11.02312;
+      assert.approximately(
+        convertHandler.convert(input[0], input[1]),
+        expected,
+        0.1
+      );
+      done();
+    });
+  });
 });
