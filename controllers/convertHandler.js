@@ -90,27 +90,27 @@ function ConvertHandler() {
     switch (unit) {
       case 'gal':
       case 'GAL':
-        result = 'gallon(s)';
+        result = 'gallons';
         break;
       case 'l':
       case 'L':
-        result = 'litre(s)';
+        result = 'litres';
         break;
       case 'lbs':
       case 'LBs':
-        result = 'pound(s)';
+        result = 'pounds';
         break;
       case 'kg':
       case 'KG':
-        result = 'kilogram(s)';
+        result = 'kilograms';
         break;
       case 'mi':
       case 'MI':
-        result = 'mile(s)';
+        result = 'miles';
         break;
       case 'km':
       case 'KM':
-        result = 'kilometre(s)';
+        result = 'kilometres';
         break;
     }
 
