@@ -64,7 +64,7 @@ function ConvertHandler() {
     let result;
 
     if (initUnit === 'gal' || initUnit === 'GAL') {
-      result = 'l';
+      result = 'L';
     } else if (initUnit === 'l' || initUnit === 'L') {
       result = 'gal';
     }
@@ -94,7 +94,7 @@ function ConvertHandler() {
         break;
       case 'l':
       case 'L':
-        result = 'litres';
+        result = 'liters';
         break;
       case 'lbs':
       case 'LBs':
@@ -110,7 +110,7 @@ function ConvertHandler() {
         break;
       case 'km':
       case 'KM':
-        result = 'kilometres';
+        result = 'kilometers';
         break;
     }
 
