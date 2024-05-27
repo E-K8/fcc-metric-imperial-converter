@@ -59,8 +59,22 @@ suite('Unit Tests', function () {
         'LBS',
         'KG',
       ];
-      input.forEach(function (el) {
-        assert.equal(convertHandler.getUnit(32 + el), el);
+      let expect = [
+        'gal',
+        'L',
+        'mi',
+        'km',
+        'lbs',
+        'kg',
+        'gal',
+        'L',
+        'mi',
+        'km',
+        'lbs',
+        'kg',
+      ];
+      input.forEach(function (el, i) {
+        assert.equal(convertHandler.getUnit(32 + el), expect[i]);
       });
       done();
     });
